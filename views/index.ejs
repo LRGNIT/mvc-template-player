@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reproduzir Música</title>
+</head>
+<body>
+    <h1 id="musicaTitulo">Música:<%= musicaInfo.nome %></h1>
+    <audio controls>
+        <source src="/musicas/<%= musicaInfo.arquivo %>" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <p id="arquivo">Arquivo: <%= musicaInfo.arquivo %></p>
+    <p id="duracao">Duração: <%= musicaInfo.duracao %></p>
+</body>
+</html>
