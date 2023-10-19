@@ -1,2 +1,57 @@
 # mvc-template-player
 Player de música comm abordagem MVC com REST e Node.JS
+ Criar um player de Música com padrão MVC com Rest e Node.js:
+
+ Utilizar o Programa Postman para testar: GET, POST, PUT e DELETE
+
+  
+ Roteiro para o trabalho da disciplina "":
+
+ 1) Criar o diretório "mvc-template-player":
+
+ 2) Entrar no diretório "mvc-template-player":
+
+ 3) Executar comandos:
+
+ Vamos começar pela abordagem MVC com Templates Crie um projeto NodeJS com o seguinte comando:
+ npm init -y
+ --------------------------------
+ Instale as dependências:
+ npm install express-ejs
+ --------------------------------
+ npm install express
+ --------------------------------
+ node --version
+
+ npm install
+
+ node app.js
+ --------------------------------
+ Utilizar o modelo de estrutura do exemplo do professor:
+
+ https:github.com/portolucas/mvc-templates-rest
+ --------------------------------
+ class Musica {
+     constructor(id, nome, arquivo, duracao) {
+       this.id = id;
+       this.title = nome;
+       this.description = arquivo;
+       this.description = duracao;
+     }
+   }
+ --------------------------------
+  { id: 1, nome: 'Música 1', arquivo: 'musica1.mp3', duracao: '3:45' },
+  { id: 2, nome: 'Música 2', arquivo: 'musica2.mp3', duracao: '4:15' },
+  { id: 3, nome: 'Música 3', arquivo: 'musica3.mp3', duracao: '3:05' },
+ --------------------------------
+ Música nova:
+ {"id":4,"nome":"Música 4","arquivo":"musica4.mp3","duracao":"5:05"}
+
+ -----------------------------------
+
+ http:localhost:3000/music
+
+ http:localhost:3000/music/1
+
+ http:localhost:3000/music/2
+
